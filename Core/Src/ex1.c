@@ -1,7 +1,8 @@
 #include "ex1.h"
 
 int led_status = LED_ON;
-int counter = TIME_SWITCH;
+//int counter = TIME_SWITCH;
+extern int counter;	// Declaration of counter
 
 void init_exercise1()
 {
