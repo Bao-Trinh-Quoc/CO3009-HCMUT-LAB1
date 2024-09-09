@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ex4.h"
+#include "ex3.h"
+#include "ex5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -87,16 +88,15 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-//  init_exercise4();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//	  init_exercise4();
-	 exercise4_run();
-    /* USER CODE END WHILE */
+//	  exercise3_run();
+	  exercise5_run();
+	  /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
@@ -156,16 +156,22 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, LED1_GREEN_Pin|LED1_YELLOW_Pin|LED1_RED_Pin|LED2_GREEN_Pin
-                          |LED2_YELLOW_Pin|LED2_RED_Pin, GPIO_PIN_RESET);
+                          |LED2_YELLOW_Pin|LED2_RED_Pin|SEG2_0_Pin|SEG2_1_Pin
+                          |SEG2_2_Pin|SEG2_3_Pin|SEG2_4_Pin|SEG2_5_Pin
+                          |SEG2_6_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SEG1_0_Pin|SEG1_1_Pin|SEG1_2_Pin|SEG1_3_Pin
                           |SEG1_4_Pin|SEG1_5_Pin|SEG1_6_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : LED1_GREEN_Pin LED1_YELLOW_Pin LED1_RED_Pin LED2_GREEN_Pin
-                           LED2_YELLOW_Pin LED2_RED_Pin */
+                           LED2_YELLOW_Pin LED2_RED_Pin SEG2_0_Pin SEG2_1_Pin
+                           SEG2_2_Pin SEG2_3_Pin SEG2_4_Pin SEG2_5_Pin
+                           SEG2_6_Pin */
   GPIO_InitStruct.Pin = LED1_GREEN_Pin|LED1_YELLOW_Pin|LED1_RED_Pin|LED2_GREEN_Pin
-                          |LED2_YELLOW_Pin|LED2_RED_Pin;
+                          |LED2_YELLOW_Pin|LED2_RED_Pin|SEG2_0_Pin|SEG2_1_Pin
+                          |SEG2_2_Pin|SEG2_3_Pin|SEG2_4_Pin|SEG2_5_Pin
+                          |SEG2_6_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
