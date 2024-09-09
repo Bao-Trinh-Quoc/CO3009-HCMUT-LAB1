@@ -42,7 +42,7 @@ void clearAllClock()
 	HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin, RESET);
 	HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin, RESET);
 	HAL_GPIO_WritePin(LED11_GPIO_Port, LED11_Pin, RESET);
-	HAL_Delay(1000);
+//	HAL_Delay(1000);
 }
 void init_ex6_7()
 {

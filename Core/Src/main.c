@@ -17,7 +17,9 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include "ex8_9.h"
+#include "ex10.h"
+//#include "ex6_7.h"
+//#include "ex8_9.h"
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -89,6 +91,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 //  init_ex6_7();
 //  init_ex8_9();
+//  init_ex10();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -96,7 +99,8 @@ int main(void)
   while (1)
   {
 //	  ex6_7_run();
-	  ex8_9_run();
+//	  ex8_9_run();
+	  ex10_run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
