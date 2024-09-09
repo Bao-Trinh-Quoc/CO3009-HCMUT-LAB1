@@ -17,7 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <ex6_7.h>
+#include "ex8_9.h"
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -88,13 +88,15 @@ int main(void)
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
 //  init_ex6_7();
+//  init_ex8_9();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ex6_7_run();
+//	  ex6_7_run();
+	  ex8_9_run();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
